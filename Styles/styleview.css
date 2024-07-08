@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 0px;
+}
+
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+.recipe-container {
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.recipe {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.recipe-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.recipe-header .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.recipe-header .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.recipe-header .user-info p {
+    margin: 0;
+}
+
+
+.recipe img.recipe-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.recipe h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe p {
+    margin-bottom: 8px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+button.like-button, button.save-button, button.report-button, button.hide-button, button.delete-button, button.comment-form .submit-comment {
+    background-color: #F4400D;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+button.like-button:hover, button.save-button:hover, button.report-button:hover, button.hide-button:hover, button.delete-button:hover, button.comment-form .submit-comment:hover {
+    background-color: #ea3d0d;
+}
+
+
+.recipe .comments-section {
+    margin-top: 15px;
+}
+
+.recipe .comments-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.recipe .comment {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.recipe .comment p {
+    margin-bottom: 5px;
+}
+
+.comment .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.comment .comment-text {
+    flex: 1;
+}
+
+.comment .timeago {
+    margin-left: auto;
+    font-size: 12px;
+    color: #888;
+}
+
+
+.recipe .comment-form {
+    margin-top: 10px;
+}
+
+.recipe .comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.recipe .comment-form .submit-comment {
+    background-color: #F4400D;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
