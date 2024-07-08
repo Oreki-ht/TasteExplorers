@@ -1,0 +1,207 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        padding-top: 140px; 
+        
+    }
+    
+    /* Header Styles */
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff; 
+        border: 1px solid #ffffff;
+        
+    }
+    
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 60px; 
+        margin-right: 30px;
+    }
+    
+    .search-bar {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 250px;
+    }
+    
+    .search-btn {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    
+    /* Top Navigation Styles */ 
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        text-decoration: none;
+        color: #333; 
+        
+    }
+    
+    .nav-icon {
+        font-size: 24px; 
+    }
+    
+    .nav-text {
+        font-size: 12px; 
+        margin-top: 5px;
+    }
+    /**/
+    .navigate {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        margin-top: -70px;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        
+    }
+    
+    .navigate ul {
+        width: 50%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        justify-content: space-between;
+        
+        
+    }
+    
+    .navigate ul li {
+        display: inline-block;
+        
+    }
+    
+    .navigate ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+    
+    }
+    
+    .navigate ul li ul.cuisines-dropdown {
+        width: 200px;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navigate ul li ul.cuisines-dropdown li {
+        display: block;
+        width: 100%;
+        padding: 0px 0px;
+    }
+    
+    .navigate ul li ul.cuisines-dropdown li a {
+        font-size: 12px;
+    }
+    
+    .navigate ul li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fd5240;
+        background-color: transparent; 
+    }
+    
+    .navigate ul li ul.cuisines-dropdown li a:hover {
+        background-color: #eeeeee;
+        text-decoration: none;
+    }
+    
+    .navigate ul li:hover ul.cuisines-dropdown {
+        display: block;
+    }
+    
+    #searchInput {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left: 230px;
+    font-family: Arial, sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    transition: border-color 0.3s ease;
+  }
+
+  #searchInput:focus {
+    border-color: #fd5240;
+    outline: none; 
+  }
+    
+    
+    </style>
+    
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+        </div>
+        <a href="index.php" class="nav-link">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="post_recipe1.php" class="nav-link">
+            <span class="nav-icon">➕</span>
+            <span class="nav-text">Create</span>
+        </a>
+        <a href="view_recipes.php" class="nav-link">
+            <span class="nav-icon">🍽️</span>
+            <span class="nav-text">Explore</span>
+        </a>
+        <a href="people_you_may_know.php" class="nav-link">
+            <span class="nav-icon">👨‍🍳</span>
+            <span class="nav-text">Chefs</span>
+            </a>
+        <a href="notification.php" class="nav-link">
+            <span class="nav-icon">🔔</span>
+            <span class="nav-text">Notification</span>
+        </a>
+        <a href="profile.php" class="nav-link">
+            <span class="nav-icon">👤</span>
+            <span class="nav-text">Profile</span>
+        </a>
+        
+    </header>
+
+   
+    
+    

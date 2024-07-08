@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Explorer</title>
+    <link rel="stylesheet" href="stylehome.css">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 140px; 
+        }
+        
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff; 
+            border: 1px solid #ffffff;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px; 
+            margin-right: 100px;
+        }
+        
+        .search-bar {
+            padding: 15px 15px;
+            border: 1px solid #000000; 
+            border-radius: 40px 0px 0px 40px;
+            width: 550px; 
+            margin-top: -5px; 
+        }
+        
+        .search-btn {
+            padding: 8.5px 10px;
+            border: 1px solid #000000; 
+            border-radius: 0px 40px 40px 0px;
+            background-color: #F4400D; 
+            cursor: pointer;
+            margin-left: -1px;
+            margin-top: -5px; 
+        }
+        
+        .search-btn img {
+            width: 25px; 
+            height: 25px; 
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .more-btn {
+            padding: 12px 4px 12px 8px;
+            border: 1px solid #ffffff; 
+            border-radius: 0px;
+            background-color: #F4400D; 
+            cursor: pointer;
+            margin-top: -5px; 
+        }
+        
+        .more-btn img {
+            width: 20px;
+            height: 20px; 
+            vertical-align: middle;
+            margin-right: 5px; 
+        }
+        
+        /* Top Navigation Styles */
+        .top-nav {
+            position:absolute;
+            top: 70px; 
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff; 
+            border-bottom: 1px solid #ddd; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            z-index: 999; 
+        }
+        
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #333; 
+        }
+        
+        .nav-icon {
+            font-size: 24px;
+        }
+        
+        .nav-text {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        
+        </style>
+        <header class="header">
+            <div class="header-left">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="icon2.png" alt="Search">
+                </button>
+            </div>
+            <div class="header-right">
+                <button class="more-btn">
+                    <img src="icon3.png" alt="More">
+                </button>
+            </div>
+        </header>
+        
+        <nav class="top-nav">
+            <a href="home.html" class="nav-link">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="post_recipe1.php" class="nav-link">
+                <span class="nav-icon">➕</span>
+                <span class="nav-text">Create</span>
+            </a>
+            <a href="view_recipes.php" class="nav-link">
+                <span class="nav-icon">🍽️</span>
+                <span class="nav-text">Explore</span>
+            </a>
+            <a href="people_you_may_know.php" class="nav-link">
+                <span class="nav-icon">👨‍🍳</span>
+                <span class="nav-text">Chefs</span>
+                </a>
+            <a href="notification.php" class="nav-link">
+                <span class="nav-icon">🔔</span>
+                <span class="nav-text">Notification</span>
+            </a>
+            <a href="profile.php" class="nav-link">
+                <span class="nav-icon">👤</span>
+                <span class="nav-text">Profile</span>
+            </a>
+            
+            
+        </nav>
+        
+</body>
+</html>
